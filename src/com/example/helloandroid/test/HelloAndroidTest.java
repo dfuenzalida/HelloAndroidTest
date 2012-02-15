@@ -23,13 +23,18 @@ public class HelloAndroidTest extends
         mView = (TextView) mActivity.findViewById(com.example.helloandroid.R.id.textview);
         resourceString = mActivity.getString(com.example.helloandroid.R.string.hello);
     }
+
+    public void testThatFails(){
+	int i = 1 / 0;
+    }
     
     public void testPreconditions() {
-        assertNotNull(mView);
+        // assertNotNull(mView);
     }
     
     public void testText() {
         assertEquals(resourceString, (String)mView.getText());
+        // assertEquals("Hola Mundo", (String)mView.getText());
     }
 	
 }
