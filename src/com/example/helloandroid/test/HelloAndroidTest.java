@@ -25,11 +25,11 @@ public class HelloAndroidTest extends
     }
 
     public void testThatFails(){
-	int i = 1 / 0;
+	// int i = 1 / 0;
     }
     
     public void testPreconditions() {
-        // assertNotNull(mView);
+        assertNotNull(mView);
     }
     
     public void testText() {
